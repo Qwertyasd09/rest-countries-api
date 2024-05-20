@@ -1,4 +1,4 @@
-import { useGlobalContext } from '../hooks/useContextState';
+import { useGlobalContext } from '../context/ContextGlobalState';
 
 export const Filter = () => {
   const { regionData } = useGlobalContext();

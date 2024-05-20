@@ -1,14 +1,7 @@
 import { createContext, useContext, useState, useLayoutEffect } from 'react';
-import { WrapperProps } from '../types/types';
+import { ThemeContextType, ThemeStateType, WrapperProps } from '../types/types';
 
-type ThemeStateType = 'light' | 'dark';
-
-interface ThemeContext {
-  theme: ThemeStateType;
-  toggleTheme: () => void;
-}
-
-const ThemeContext = createContext<ThemeContext>({} as ThemeContext);
+const ThemeContext = createContext<ThemeContextType>({} as ThemeContextType);
 
 const ThemeProvider = ({ children }: WrapperProps) => {
   const [theme, setTheme] = useState<ThemeStateType>('light');

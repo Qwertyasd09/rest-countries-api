@@ -1,6 +1,11 @@
-import { useGlobalContext } from '../hooks/useContextState';
+import { useGlobalContext } from '../context/ContextGlobalState';
 import { Country } from '../types/types';
-import { numberWithCommas } from '../utils/utils';
+import {
+  filterByQuery,
+  filterByRegion,
+  getCountryCodes,
+  numberWithCommas
+} from '../utils/utils';
 import { Link } from 'react-router-dom';
 
 interface CountryCardProps {
@@ -14,17 +19,13 @@ export const CountryCard = ({ countries }: CountryCardProps) => {
   let filteredCountries: Country[] | null | undefined = countries;
   filteredCountries =
     region !== 'All' && region !== null
-      ? filteredCountries?.filter((country) => country.region == region)
+      ? filterByRegion({ filteredCountries, region })
       : filteredCountries;
   filteredCountries =
     query != null
-      ? filteredCountries?.filter((country) =>
-          country.name.common.toLowerCase().includes(query.toLowerCase()!)
-        )
+      ? filterByQuery({ filteredCountries, query })
       : filteredCountries;
-  const countriesCode = Object.fromEntries(
-    countries!.map((country) => [country.cca3, country.name.common])
-  );
+  const countriesCode = getCountryCodes(countries);
   return (
     <ul className="mx-4 grid grid-cols-autoColumn justify-center gap-x-12 gap-y-16 px-8">
       {filteredCountries?.map((country) => (

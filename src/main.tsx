@@ -1,24 +1,12 @@
 import React from 'react';
+import { RouterProvider } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
-import HomePage from './HomePage.tsx';
 import './index.css';
-import { ThemeProvider } from './hooks/contextTheme.tsx';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { CountryPage } from './components/CountryPage.tsx';
-import { MissingInfoCountry } from './components/MissingInfoCountry.tsx';
-import { GlobalProvider } from './hooks/useContextState.tsx';
+import { ThemeProvider } from './context/ContextTheme.tsx';
+import { GlobalProvider } from './context/ContextGlobalState.tsx';
+import { createRoutes } from './routes/routes.tsx';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <HomePage />
-  },
-  {
-    path: '/:countriesId',
-    element: <CountryPage />,
-    errorElement: <MissingInfoCountry />
-  }
-]);
+const router = createRoutes();
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

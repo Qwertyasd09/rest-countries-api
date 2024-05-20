@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon as faMoonLight } from '@fortawesome/free-regular-svg-icons';
 import { faMoon as faMoonDark } from '@fortawesome/free-solid-svg-icons';
-import { useTheme } from '../hooks/contextTheme';
+import { useTheme } from '../context/ContextTheme';
 
 export const Navbar = () => {
   const { theme, toggleTheme } = useTheme();

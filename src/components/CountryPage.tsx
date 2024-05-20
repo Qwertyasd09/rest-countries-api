@@ -3,8 +3,8 @@ import { Country } from '../types/types';
 import { Navbar } from './Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import { useTheme } from '../hooks/contextTheme';
-import { numberWithCommas } from '../utils/utils';
+import { useTheme } from '../context/ContextTheme';
+import { formatCountryData } from '../utils/utils';
 
 export const CountryPage = () => {
   const { theme } = useTheme();
@@ -12,20 +12,7 @@ export const CountryPage = () => {
   const country = location.state.country as Country;
   const countriesCode = location.state.countriesCode;
   const countries = location.state.countries as Country[];
-  const countryData = {
-    img: {
-      src: country.flags.png,
-      alt: country.flags.alt
-    },
-    nativeName: Object.values(country.name.nativeName)[0].official,
-    population: numberWithCommas(country.population),
-    region: country.region,
-    subregion: country.subregion,
-    capital: country.capital,
-    tld: country.tld,
-    currencies: Object.values(country.currencies)[0].name,
-    languages: Object.values(country.languages).sort().join(', ')
-  };
+  const countryData = formatCountryData(country);
   return (
     <div className="min-h-screen bg-background font-FontProject text-color-project">
       <Navbar />

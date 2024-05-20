@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import { useTheme } from '../hooks/contextTheme';
-import { useGlobalContext } from '../hooks/useContextState';
+import { useTheme } from '../context/ContextTheme';
+import { useGlobalContext } from '../context/ContextGlobalState';
 
 export const Input = () => {
   const { theme } = useTheme();
