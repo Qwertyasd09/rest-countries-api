@@ -8,10 +8,12 @@ export const Navbar = () => {
 
   return (
     <nav className="flex justify-between bg-elements px-20 py-10 text-color-project shadow-md md:px-7">
-      <h1 className="xsm:text-xl text-2xl font-extrabold">Where in the world?</h1>
+      <h1 className="text-2xl font-extrabold xsm:text-xl">
+        Where in the world?
+      </h1>
       <div
         onClick={toggleTheme}
-        className="xsm:text-base flex items-center gap-3 text-lg font-semibold"
+        className="flex items-center gap-3 text-lg font-semibold xsm:text-base"
       >
         <FontAwesomeIcon icon={theme === 'light' ? faMoonLight : faMoonDark} />
         Dark Mode

@@ -1,10 +1,10 @@
 import { useGlobalContext } from '../context';
 import { Country } from '../types';
-import { 
-  filterByQuery, 
-  filterByRegion, 
-  getCountryCodes, 
-  numberWithCommas 
+import {
+  filterByQuery,
+  filterByRegion,
+  getCountryCodes,
+  numberWithCommas
 } from '../utils';
 import { Link } from 'react-router-dom';
 

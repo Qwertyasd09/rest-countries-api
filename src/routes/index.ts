@@ -1,3 +1,3 @@
-import { createRoutes } from "./routes";
+import { createRoutes } from './routes';
 
-export { createRoutes }
+export { createRoutes };

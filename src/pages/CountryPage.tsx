@@ -16,7 +16,7 @@ export const CountryPage = () => {
   return (
     <div className="min-h-screen bg-background font-FontProject text-color-project">
       <Navbar />
-      <div className="px-2 ml-auto mr-auto flex w-[90%] flex-col">
+      <div className="ml-auto mr-auto flex w-[90%] flex-col px-2">
         <Link
           className="my-12 mr-auto flex w-fit items-center gap-2 rounded-md bg-elements px-12 py-2 text-base font-light shadow-2xl"
           to={'/'}

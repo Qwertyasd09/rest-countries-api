@@ -1,4 +1,4 @@
-import { WrapperProps } from "../types";
+import { WrapperProps } from '../types';
 
 export const OuterWrapper = ({ children }: WrapperProps) => {
   return (

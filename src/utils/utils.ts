@@ -1,4 +1,4 @@
-import { Country, FilterQueryFunc, FilterRegionFunc } from "../types";
+import { Country, FilterQueryFunc, FilterRegionFunc } from '../types';
 
 export function numberWithCommas(x: number) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');

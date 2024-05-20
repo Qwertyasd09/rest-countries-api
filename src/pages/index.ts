@@ -1,4 +1,4 @@
-import { HomePage } from "./HomePage";
-import { CountryPage } from "./CountryPage";
+import { HomePage } from './HomePage';
+import { CountryPage } from './CountryPage';
 
-export { HomePage, CountryPage }
+export { HomePage, CountryPage };

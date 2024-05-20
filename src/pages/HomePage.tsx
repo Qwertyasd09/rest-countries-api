@@ -1,12 +1,7 @@
 import { useEffect, useState } from 'react';
-import "../App.css"
+import '../App.css';
 import { Country } from '../types';
-import { 
-  CountryCard, 
-  OuterWrapper,
-  Navbar,
-  Search 
-} from '../components';
+import { CountryCard, OuterWrapper, Navbar, Search } from '../components';
 import { fecthDataCountries } from '../utils';
 
 export const HomePage = () => {
@@ -23,5 +18,4 @@ export const HomePage = () => {
       <CountryCard countries={countries} />
     </OuterWrapper>
   );
-}
-
+};

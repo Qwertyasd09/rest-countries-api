@@ -1,17 +1,17 @@
-import { 
-    numberWithCommas, 
-    fecthDataCountries, 
-    filterByQuery, 
-    filterByRegion,
-    getCountryCodes,
-    formatCountryData,
-} from "./utils";
+import {
+  numberWithCommas,
+  fecthDataCountries,
+  filterByQuery,
+  filterByRegion,
+  getCountryCodes,
+  formatCountryData
+} from './utils';
 
-export { 
-    numberWithCommas, 
-    fecthDataCountries, 
-    filterByQuery, 
-    filterByRegion,
-    getCountryCodes,
-    formatCountryData 
-}
+export {
+  numberWithCommas,
+  fecthDataCountries,
+  filterByQuery,
+  filterByRegion,
+  getCountryCodes,
+  formatCountryData
+};
