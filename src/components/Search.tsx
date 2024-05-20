@@ -1,5 +1,4 @@
-import { Filter } from './Filter';
-import { Input } from './Input';
+import { Filter, Input } from "../components";
 
 export const Search = () => {
   return (

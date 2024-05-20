@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useLayoutEffect } from 'react';
-import { ThemeContextType, ThemeStateType, WrapperProps } from '../types/types';
+import { ThemeContextType, ThemeStateType, WrapperProps } from '../types';
 
 const ThemeContext = createContext<ThemeContextType>({} as ThemeContextType);
 

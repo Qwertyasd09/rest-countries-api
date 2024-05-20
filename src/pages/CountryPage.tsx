@@ -1,10 +1,10 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Country } from '../types/types';
-import { Navbar } from './Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import { useTheme } from '../context/ContextTheme';
-import { formatCountryData } from '../utils/utils';
+import { useTheme } from '../context';
+import { Country } from '../types';
+import { Navbar } from '../components';
+import { formatCountryData } from '../utils';
 
 export const CountryPage = () => {
   const { theme } = useTheme();
@@ -16,7 +16,7 @@ export const CountryPage = () => {
   return (
     <div className="min-h-screen bg-background font-FontProject text-color-project">
       <Navbar />
-      <div className="ml-auto mr-auto flex w-[90%] flex-col px-10">
+      <div className="px-2 ml-auto mr-auto flex w-[90%] flex-col">
         <Link
           className="my-12 mr-auto flex w-fit items-center gap-2 rounded-md bg-elements px-12 py-2 text-base font-light shadow-2xl"
           to={'/'}

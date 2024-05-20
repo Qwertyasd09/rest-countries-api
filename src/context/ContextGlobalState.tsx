@@ -1,6 +1,5 @@
 import { createContext, useContext, useState } from 'react';
-import { WrapperProps } from '../types/types';
-import { GlobalContextType } from '../types/types';
+import { WrapperProps, GlobalContextType } from '../types';
 
 const GlobalContext = createContext<GlobalContextType>({} as GlobalContextType);
 

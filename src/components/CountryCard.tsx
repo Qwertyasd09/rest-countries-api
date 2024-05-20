@@ -1,11 +1,11 @@
-import { useGlobalContext } from '../context/ContextGlobalState';
-import { Country } from '../types/types';
-import {
-  filterByQuery,
-  filterByRegion,
-  getCountryCodes,
-  numberWithCommas
-} from '../utils/utils';
+import { useGlobalContext } from '../context';
+import { Country } from '../types';
+import { 
+  filterByQuery, 
+  filterByRegion, 
+  getCountryCodes, 
+  numberWithCommas 
+} from '../utils';
 import { Link } from 'react-router-dom';
 
 interface CountryCardProps {

@@ -1,7 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
-import HomePage from '../HomePage';
-import { CountryPage } from '../components/CountryPage';
-import { MissingInfoCountry } from '../components/MissingInfoCountry';
+import { HomePage, CountryPage } from '../pages';
+import { MissingInfoCountry } from '../components';
 
 export const createRoutes = () =>
   createBrowserRouter([
