@@ -1,3 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.light-mode {
+    --bg-clr: hsl(0, 0%, 98%);
+    --text-clr: hsl(200, 15%, 8%);
+    --clr-input-text: hsl(0, 0%, 52%);
+    --clr-elements: hsl(0, 0%, 100%);
+}
+
+.dark-mode {
+    --bg-clr: hsl(207, 26%, 17%);
+    --text-clr: hsl(0, 0%, 100%);
+    --clr-elements: hsl(209, 23%, 22%);
+}
+
+@media (max-width: 767px) {
+    html {
+        font-size: 95%;
+    }
+}
+
+@media (max-width: 520px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+html, body{
+    height: 100%;
+ }
