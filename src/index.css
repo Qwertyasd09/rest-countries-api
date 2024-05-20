@@ -19,16 +19,12 @@
 
 @media (max-width: 767px) {
     html {
-        font-size: 95%;
+        font-size: 14px;
     }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 424px) {
     html {
-        font-size: 70%;
+        font-size: 12px;
     }
 }
-
-html, body{
-    height: 100%;
- }

@@ -39,10 +39,10 @@ export const CountryCard = ({ countries }: CountryCardProps) => {
         >
           <li
             key={crypto.randomUUID()}
-            className="ml-auto mr-auto w-80 rounded-lg bg-elements pb-2 text-color-project shadow-md duration-300 ease-in hover:scale-110 md:w-11/12"
+            className="ml-auto mr-auto w-80 rounded-lg bg-elements pb-2 text-color-project shadow-md duration-300 ease-in hover:scale-110 md:w-full"
           >
             <img
-              className="h-40 w-full rounded-tl-lg rounded-tr-lg"
+              className="h-40 w-full rounded-tl-lg rounded-tr-lg lg:h-52"
               src={country.flags.png}
               alt={country.flags.alt}
             ></img>
